@@ -49,7 +49,7 @@ input[type=text]{
     color: black;
     border-color: #707070;
     border-width: 0.1px;
-    border-radius: 5px;
+    border-radius: 15px;
     padding: 10px 10px 10px 30px;
     margin-left: 50px;
     margin-top: 40px;
@@ -70,25 +70,27 @@ input[type=text]{
 .recipe-section h3{
     margin: 0px;
     font-size: 60px;
-    padding-top: 0px;
     margin-left: 100px;
 }
 .recipe-section h3{
     font-size: 60px;
     font-weight: 200;
-    margin: 0px;
+    margin-top: -6px;
     margin-left: 100px;
 }
 .recipe-section h3{
     font-size: 50px;
     font-weight: 200;
-    margin: 0px;
+    /* margin: 0px; */
     margin-left: 100px;
 }
 .recipe-section p{
     margin-left: 100px;
     width: 450px;
-    margin-top: 8px;
+    /* margin-top: 8px; */
+    margin-top: 17px;
+    line-height: 160%;
+    font-weight: 457;
 }
 .recipe-section input[type=text]{
     background-color: white;
@@ -115,17 +117,18 @@ button.explore{
     background-color: #fba500;
     color: white;
     border-radius: 50px;
+    margin-top: 25px;
     margin-left: 100px;
     border-color: #fba500;
     cursor: pointer;
 }
 button.explore-border{
-    padding: 22px 120px 20px 100px;
+    padding: 22px 120px 20px 105px;
     background-color: transparent;
     border-radius: 50px;
     position :absolute;
-    top: 512px;
-    left: 115px;
+    top: 455px;
+    left: 107px;
     border-color: #fba500;
     cursor: pointer;
     border-top:none;
@@ -160,7 +163,7 @@ p.black{
     margin-bottom: 10px;
 }
 p.normal{
-    font-size: 12px;
+    font-size: 15px;
     width: 450px;
     line-height: 20px;
 }
@@ -178,12 +181,12 @@ button.explore-menu{
     cursor: pointer;
 }
 button.explore-menu-border{
-    padding: 20px 100px 20px 62px;
+    padding: 20px 100px 20px 64px;
     background-color: transparent;
     border-radius: 50px;
     position: absolute;
-    top: 1112px;
-    left: 807px;
+    top: 1110px;
+    left: 797px;
     border-color: #fba500;
     cursor: pointer;
     border-top:none;
@@ -259,7 +262,7 @@ button.find-recipes-border{
     background-color: transparent;
     border-radius: 50px;
     position: absolute;
-    top: 1610px;
+    top: 1633px;
     left: 137px;
     border-color: #fba500;
     cursor: pointer;
@@ -281,7 +284,9 @@ button.find-recipes-border{
 .nutrition-image p{
     margin-left: -20px;
     width: 450px;
-    margin-top: 8px;
+    margin-top: 17px;
+    line-height: 160%;
+    font-weight: 457;
 }
 /*beverages*/
 .beverage-written{
@@ -310,8 +315,8 @@ button.beverage-recipes-border{
     background-color: transparent;
     border-radius: 50px;
     position: absolute;
-    top: 2055px;
-    left: 688px;
+    top: 2077px;
+    left: 685px;
     border-color: #fba500;
     cursor: pointer;
     border-top:none;
@@ -332,7 +337,9 @@ button.beverage-recipes-border{
 .beverage-image p{
     margin-left: -20px;
     width: 450px;
-    margin-top: 8px;
+    margin-top: 17px;
+    font-size: 15px;
+    line-height: 160%;
 }
 /*category-search*/
 .category-search-written{
@@ -384,6 +391,8 @@ button.category-search-recipes-border{
     margin-left: -20px;
     width: 450px;
     margin-top: 8px;
+    font-weight: 400;
+    font-size: 15px;
 }
 /* footer */
 footer{
@@ -411,17 +420,22 @@ p span {
     width: 400px;
     margin: 80px 0px 40px 100px;
 }
-.footer-column2,.footer-column3{
-    width: 150px;
-    margin-left: 60px;
+.quote{
+    display: flex;
 }
-.footer-column2 a,.footer-column3 a,.footer-column4 a{
+.footer-column3{
+    width: 280px;
+    margin-top: 40px;
+    margin-left: 60px;
+    margin-right: 250px;
+}
+.footer-column3 a,.footer-column4 a{
     color: black;
     text-decoration: none;
     font-size: 14px;
     margin-bottom: 100px;
 }
-.footer-column2 h2,.footer-column3 h2,.footer-column4 h2{
-    font-size: 20px;
+.footer-column3 h2,.footer-column4 h2{
+    font-size: 15px;
     margin-top: 50px;
 }
