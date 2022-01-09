@@ -9,7 +9,7 @@ body{
 header{
     /* background-color: #F6FBFB; */
     /* background-color: transparent; */
-    background-color: #fefefe;
+    background-color: #f4f4f4;
     display: flex;
     position: sticky;
     /* left: 100px; */
@@ -71,7 +71,7 @@ input[type=text]{
     display: flex;
 }
 #bev_land{
-    background-color: #fefefe;
+    background-color: #f4f4f4;
     color: #fefefe;
     /* width: 100px; */
     height: 700px;
@@ -95,7 +95,7 @@ input[type=text]{
     color: black;
 }
 .land-section-image{
-    background-color: #fefefe;
+    background-color: #f4f4f4;
    display: block;
    margin-left: auto;
    margin-right: auto;
