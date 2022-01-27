@@ -12,7 +12,7 @@
     <title>Login/SignUp</title>
     <link rel="stylesheet" href="CSS\index.css">
 </head>
-<body>
+<body id="login">
     <div class="container">
         <div class="forms-container">
             <div class="signin-signup">
@@ -20,15 +20,15 @@
                     <h2 class="title">Sign In</h2>
                     <div class="input-field">
                         <i class="fa fa-user"></i>
-                        <input type="text" placeholder="Username"/>
+                        <input type="text" placeholder="Username" id="email_field"/>
                     </div>
                     <div class="input-field">
                         <i class="fa fa-lock"></i>
-                        <input type="password" placeholder="Password"/>
+                        <input type="password" placeholder="Password" id="password_field"/>
                     </div>
-                    <a href="home.html">
-                        <button class="btn solid">Login</button>
-                    </a>
+                    <!-- <a href="home.html"> -->
+                        <button onclick=login() class="btn solid">Login</button>
+                    <!-- </a> -->
                     <!-- <input type="submit" class="btn solid" value="Login"/> -->
                     <p class="social-text">Our Social Platforms</p>
                     <div class="social-media">
@@ -60,15 +60,15 @@
                     <h2 class="title">Sign Up</h2>
                     <div class="input-field">
                         <i class="fa fa-user"></i>
-                        <input type="text" placeholder="Username"/>
+                        <input type="text" placeholder="Username" id="email_field"/>
                     </div>
                     <div class="input-field">
                         <i class="fa fa-envelope"></i>
-                        <input type="email" placeholder="E-mail"/>
+                        <input type="email" placeholder="E-mail" id="email_field"/>
                     </div>
                     <div class="input-field">
                         <i class="fa fa-lock"></i>
-                        <input type="password" placeholder="Password"/>
+                        <input type="password" placeholder="Password" id="password_field"/>
                     </div>
                     <input type="submit" class="btn solid" value="SignUp"/>
                     <p class="social-text">Our Social Platforms</p>
@@ -123,5 +123,6 @@
         </div>
     </div>
     <script src="JS\index.js"></script>
+    <script src="JS\login.js"></script>
 </body>
 </html>

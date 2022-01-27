@@ -8,7 +8,7 @@
     <title>FoodoSphere</title>
     <link rel="stylesheet" href="CSS\home.css">
 </head>
-<body>
+<body id="home">
     <!-- header -->
     <header>
         <div class="logo">
@@ -29,12 +29,15 @@
         <!-- searchbar -->
         <div class="search-bar">
             <input type="text" placeholder="Search here">
-        </div>
-        <div class="sign-out">
-            <a href="index.html" class="logout-icon">
+            <a href="index.html" onclick="logout()" class="logout-icon">
                 <i class="fas fa-sign-out-alt"></i>
             </a>
         </div>
+        <!-- <div class="sign-out">
+            <a href="index.html" class="logout-icon">
+                <i class="fas fa-sign-out-alt"></i>
+            </a>
+        </div> -->
         
 
     </header>
@@ -201,5 +204,7 @@
             </div>
         </div>
     </footer>
+    <script src="JS\index.js"></script>
+    <script src="JS\login.js"></script>
 </body>
 </html>
