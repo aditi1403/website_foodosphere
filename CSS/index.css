@@ -268,8 +268,8 @@ form.signup-form{
 }
 
 .container.sign-up-mode form.signup-form{
-    /* margin-right: 580px;
-    margin-top: 150px; */
-    z-index: 100;
+    margin-left: -250px;
+    margin-top: 150px;
+    z-index: 2;
     opacity: 1;
 }
