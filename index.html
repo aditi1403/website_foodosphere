@@ -5,10 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/201160aa52.js" crossorigin="anonymous"></script>
-    <link 
-        rel="stylesheet" 
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-        /> 
     <title>Login/SignUp</title>
     <link rel="stylesheet" href="CSS\index.css">
 </head>
@@ -16,7 +12,7 @@
     <div class="container">
         <div class="forms-container">
             <div class="signin-signup">
-                <form action="#" class="signin-form">
+                <form action="#" onsubmit="login(event)" class="signin-form">
                     <h2 class="title">Sign In</h2>
                     <div class="input-field">
                         <i class="fa fa-user"></i>
@@ -26,10 +22,11 @@
                         <i class="fa fa-lock"></i>
                         <input type="password" placeholder="Password" id="password_field"/>
                     </div>
-                    <!-- <a href="home.html"> -->
-                        <button onclick=login() class="btn solid">Login</button>
+                    <!-- <a href="https://aditi1403.github.io/website_foodosphere/home.html"> -->
+                        <button onclick="SignIn()" class="btn solid">Login</button>
+                        <!-- type="button" onclick="login();" id="login_btn" -->
                     <!-- </a> -->
-                    <!-- <input type="submit" class="btn solid" value="Login"/> -->
+                    <!-- <input type="submit" onclick="login();" id="login_btn" class="btn solid" value="Login"/> -->
                     <p class="social-text">Our Social Platforms</p>
                     <div class="social-media">
                         <!-- facebook -->
@@ -60,7 +57,7 @@
                     <h2 class="title">Sign Up</h2>
                     <div class="input-field">
                         <i class="fa fa-user"></i>
-                        <input type="text" placeholder="Username" id="email_field"/>
+                        <input type="text" placeholder="Username" id="name_field"/>
                     </div>
                     <div class="input-field">
                         <i class="fa fa-envelope"></i>
@@ -70,7 +67,8 @@
                         <i class="fa fa-lock"></i>
                         <input type="password" placeholder="Password" id="password_field"/>
                     </div>
-                    <input type="submit" class="btn solid" value="SignUp"/>
+                    <button type="submit" onclick="UserRegister()" class="btn solid">SignUp</button>
+                    <!-- <input type="submit" class="btn solid" value="SignUp"/> -->
                     <p class="social-text">Our Social Platforms</p>
                     <div class="social-media">
                         <!-- facebook -->
@@ -124,5 +122,8 @@
     </div>
     <script src="JS\index.js"></script>
     <script src="JS\login.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </body>
 </html>

@@ -36,7 +36,7 @@ input {
     background-image: linear-gradient(-45deg,#fba500 0%,#e69807 100%);
     transform: translateY(-50%);
     border-radius:50%;
-    z-index: 6;
+    /* z-index: 6; */
     transition: 1.8s ease-in-out;
 }
 
@@ -48,6 +48,7 @@ form{
     padding: 0 5rem;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
+    /* z-index: 1; */
 }
 
 .title{
@@ -267,8 +268,8 @@ form.signup-form{
 }
 
 .container.sign-up-mode form.signup-form{
-    margin-right: 580px;
-    margin-top: 150px;
+    /* margin-right: 580px;
+    margin-top: 150px; */
     z-index: 100;
     opacity: 1;
 }
