@@ -1,0 +1,2 @@
+(firebaseConfig);
+// const analytics = getAnal
