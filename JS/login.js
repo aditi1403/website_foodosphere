@@ -33,8 +33,9 @@ function SignIn(){
     var email=document.getElementById('email_field').value;
     var password = document.getElementById('password_field').value;
     const promise = auth.signInWithEmailAndPassword(email,password);
-    promise.catch( e => alert(e.msg));
-    window.open("https://aditi1403.github.io/website_foodosphere/home.html","_blank");
+    promise.catch( e =>{ 
+        alert(e.msg)
+        window.open("https://aditi1403.github.io/website_foodosphere/home.html","_self");});
 }
 document.getElementById('form').addEventListener('submit', (e) => {
     e.preventDefault();
@@ -46,7 +47,7 @@ document.getElementById('form').addEventListener('submit', (e) => {
     });
     alert("Successfully Signed Up");
     console.log("sent");
-    document.getElementById('form').reset();
+    // document.getElementById('form').reset();
 });
 function  getId(id){
     return document.getElementById(id).value;
@@ -54,7 +55,7 @@ function  getId(id){
 
 function logout(){
     firebase.auth().signOut().then(function(){
-        window.open("https://aditi1403.github.io/website_foodosphere/","_blank");
+        window.open("https://aditi1403.github.io/website_foodosphere/","_self");
         // signout successful
     }).catch(function(error){
         // error
