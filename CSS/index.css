@@ -269,8 +269,8 @@ form.signup-form{
 
 .container.sign-up-mode .right-panel .image, 
 .container.sign-up-mode .right-panel .content{
-    transform:translateX(30px);
-    transform:translateY(75px);
+    transform:translateX(40px);
+    transform:translateY(-20px);
     /* z-index: 100; */
 }
 
